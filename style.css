@@ -1,36 +1,3 @@
-/* Global Styles */
-@font-face {
-  font-family: 'Cyber Blast';
-  src: url('/fonts/Cyber Blast.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gakuran Demo';
-  src: url('/fonts/Gakuran-Demo.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'FFFFORWA';
-  src: url('/fonts/FFFFORWA.TTF') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'MedodicaRegular';
-  src: url('/fonts/MedodicaRegular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 html {
   scroll-behavior: smooth;
 }
