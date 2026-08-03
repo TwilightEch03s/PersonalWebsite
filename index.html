@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorenzo Uk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Londrina+Outline&family=Rubik+Glitch&display=swap" rel="stylesheet">
     <link rel="icon" href="img/icons/logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="home">
             <a href="#"><img src="img/icons/logo.png" alt="Logo" class="logo"></a>
         </div>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#work">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="">Microprojects</a>
     </nav>
 
-    <section class="name">
+    <main>
+        <!-- Hero Section -->
+        <section class="name">
         <video class="bg-video" autoplay muted loop playsinline>
             <source src="img/backgrounds/chinatown.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
@@ -27,65 +33,47 @@
         <div class="overlay"></div>
         <div class="name-layout">
             <div class="name-text">
-                <h1>Lorenzo Uk</h1>
-                <h2 class="cyber-role">
-                    <span id="roleText" class="role-text show">Game Developer</span>
-                </h2>
+            <h1>Lorenzo Uk</h1>
+            <h2>
+                <span id="roleText" class="role-text show">Game Developer</span>
+            </h2>
             </div>
-            <img src="edited-photo.png" alt="Edited silhouette" class="hero-photo">
+            <img src="/img/backgrounds/photo.png" class="hero-photo">
         </div>
+        </section>
+
+
     </section>
 
-    <!-- About Me -->
-    <section class="about-background" id="about">
-        <div class="about">
-            <h3>About Me</h3>
-            <p>Hello there!</p>
-            <p>
-                I’m a college student pursuing a B.S. in Computer Science with an emphasis in game design.
-                I specialize in computer programming and building immersive worlds for video games.
-                I have a strong passion for back-end development, artificial intelligence, and love creating software experiences from the ground up.
-            </p>
-            <p>
-                Outside of academics and coding, I enjoy going to the gym, spending time with friends, and playing video games.
-                Lately, I’ve also been diving into cooking and experimenting with a variety of dishes!
-                Feel free to reach out to me via email or social media — I’m always open to connecting!
-            </p>
-        </div>
-    </section>
-
-    <!-- Work -->
-    <section class="work-background" id="hero">
-        <div class="bg-slide" id="bg1"></div>
-        <div class="bg-slide" id="bg2"></div>
-        <div class="work-overlay" id="work">
-            <div class="work">
-                <div class="work-text">
-                    <h1>Projects</h1>
-                    <p>These are a few projects that I am currently working on or have completed in the past!</p>
-                </div>
-                <div class="work-carousel" aria-label="Project carousel">
-                    <button class="work-nav work-nav-left" type="button" aria-label="Previous projects">
-                        &larr;
-                    </button>
-                    <div class="work-track" id="work-track">
-                    <div class="content-box">
-                        <div class="project-date">2026</div>
-                        <h2>Project Apex</h2>
-                        <div class="project-role">Solo Developer</div>
+        <!-- Projects -->
+        <section class="projects-background" id="projects">
+        <div class="projects-overlay">
+            <div class="projects">
+            <div class="projects-text">
+                <h1>Projects</h1>
+                <p>Highlighted projects that showcase my game development and software engineering skills.</p>
+            </div>
+            <div class="projects-carousel" aria-label="Project carousel">
+                <div class="projects-track" id="projects-track">
+                <div class="content-box content-box-split">
+                    <div class="showcase-section">
+                    <video autoplay muted loop playsinline data-pause-time="12.5">
+                        <source src="img/showcase/riftshot.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    </div>
+                    <div class="contents">
+                        <h2>Riftshot</h2>
                         <div class="project-icons">
                             <img class="icon-img" src="img/icons/unity.svg" alt="Unity">
-                            <img class="icon-img" src="img/icons/c-sharp.svg" alt="C#"> 
+                            <img class="icon-img" src="img/icons/c-sharp.svg" alt="C#">
                         </div>
-                        <div class="showcase-section">
-                            <video autoplay muted loop playsinline data-pause-time="12.5">
-                                <source src="img/showcase/projectapex.mp4" type="video/mp4">
-                                Your browser does not support HTML5 video.
-                            </video>
-                        </div>
-                        <p>Project Apex is an unamed arena shooter where players fight in an arena with a variety of weapons and powerups. The game features fast-paced combat
-                        and strategic gameplay that challenges players to outmaneuver and outgun their opponenets. This game is currently in early development, but I have implemented core gameplay mechanics such as player movement, shooting,  and level design.
-                        This is my first multiplayer game project, so I am excited to continue building out the online functionality and adding more content in the future!</p>
+                        <div class="project-role">Solo Developer</div>
+                        <p>
+                        Riftshot is an arena shooter where players fight in an arena with a variety of weapons and powerups.
+                        The game features fast-paced combat and strategic gameplay that challenges players to outmaneuver and outgun their opponents.
+                        This game is currently in early development, but I have implemented core gameplay mechanics such as player movement, shooting, and level design.
+                        </p>
                         <div class="project-actions">
                             <a class="project-link project-link-github" href="https://github.com/lorenzouk/projectapex" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Project Apex">
                                 <img src="img/icons/social-github.svg" alt="GitHub">
@@ -93,37 +81,45 @@
                             </a>
                         </div>
                     </div>
-                    <div class="content-box">
-                        <div class="project-date">2026</div>
+                </div>
+
+                <div class="content-box content-box-split">
+                    <div class="showcase-section">
+                        <video autoplay muted loop playsinline data-pause-time="10">
+                            <source src="img/showcase/arcaneascent.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+                    <div class="contents">
                         <h2>Arcane Ascent</h2>
                         <div class="project-role">Gameplay &amp; Systems Developer</div>
                         <div class="project-icons">
                             <img class="icon-img" src="img/icons/godot.svg" alt="Godot">
-                            <img class="icon-img" src="img/icons/python.svg" alt="Python"> 
+                            <img class="icon-img" src="img/icons/python.svg" alt="Python">
                             <img class="icon-img" src="img/icons/adobe-photoshop.svg" alt="Adobe Photoshop">
                         </div>
-                        <div class="showcase-section">
-                            <video autoplay muted loop playsinline data-pause-time="10">
-                                <source src="img/showcase/arcane-ascent.mp4" type="video/mp4">
-                                Your browser does not support HTML5 video.
-                            </video>
-                        </div>
-                        <p>Arcane Ascent is a rougelike action game where players take on the role of a wizard traversing through a multi-level tower filled with diverse enemies.
-                        The game features spell-based combat and strategic progression that challenges players to adapt their tactics as difficulty increases. The game uses procedural
-                        generation systems to create a unique experience every playthrough. I developed the core concept and theme and built the combat system and enemy variety.
+                        <p>
+                        Arcane Ascent is a roguelike action game where players take on the role of a wizard traversing through a multi-level tower filled with diverse enemies.
+                        The game features spell-based combat and strategic progression that challenges players to adapt their tactics as difficulty increases.
+                        The game uses procedural generation systems to create a unique experience every playthrough.
                         </p>
                         <div class="project-actions">
-                            <a class="project-link project-link-github" href="https://github.com/Simpanzee/Arcane-Ascent" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Arcane Ascent">
-                                <img src="img/icons/social-github.svg" alt="GitHub">
-                                <span>GitHub</span>
-                            </a>
-                            <a class="project-link project-link-primary" href="https://simpanzee05.itch.io/arcane-ascent" target="_blank" rel="noopener noreferrer">
-                                <span>Play Full Game</span>
-                            </a>
-                        </div>
-    </section>
-
-
-    <script src="script.js"></script>
+                        <a class="project-link project-link-github" href="https://github.com/Simpanzee/Arcane-Ascent" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Arcane Ascent">
+                            <img src="img/icons/social-github.svg" alt="GitHub">
+                            <span>GitHub</span>
+                        </a>
+                        <a class="project-link project-link-primary" href="https://simpanzee05.itch.io/arcane-ascent" target="_blank" rel="noopener noreferrer">
+                            <span>Play Full Game</span>
+                        </a>
+                        </div> 
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
