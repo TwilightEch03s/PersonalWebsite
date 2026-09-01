@@ -65,4 +65,15 @@ document.querySelectorAll('.content-box').forEach(box => {
     });
   }
 
+  // Make project card clickable
+  const cardClickHref = box.dataset.cardHref;
+  if (cardClickHref) {
+    box.style.cursor = 'pointer';
+    box.addEventListener('click', (e) => {
+      if (e.target.closest('a')) {
+        return;
+      }
+      window.location.hash = cardClickHref;
+    });
+  }
 });
